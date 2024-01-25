@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-VariableFont_slnt,wght.ttf">
+            <string>Inter-Regular</string>
+            <string>Inter-Regular_Bold</string>
+            <string>Inter-Regular_Light</string>
+            <string>Inter-Regular_Light-Italic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWorkApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 1" translatesAutoresizingMaskIntoConstraints="NO" id="HQA-IT-6q9">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="6h0-xh-FWY">
+                                <rect key="frame" x="102" y="27" width="189" height="188"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh, Lucky!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-jT-04u">
+                                <rect key="frame" x="16" y="227" width="277" height="59"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-zj-JJF">
+                                <rect key="frame" x="16" y="292" width="277" height="58.333333333333314"/>
+                                <string key="text">Отвечай на вопросы,
+Зарабатывай опыт!</string>
+                                <fontDescription key="fontDescription" name="Inter-Regular_Light" family="Inter" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Введи имя..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WvW-6w-O7g">
+                                <rect key="frame" x="104" y="394.33333333333331" width="265" height="43"/>
+                                <color key="backgroundColor" white="0.70277954931972786" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="KCs-QF-Tm0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular_Light-Italic" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDK-qf-fWR">
+                                <rect key="frame" x="159" y="449.33333333333331" width="210" height="43"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.50588235294117645" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="33b-mS-AJn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular_Bold" family="Inter" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="31" minY="0.0" maxX="31" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="И начни игру &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6h0-xh-FWY" secondAttribute="trailing" constant="102" id="0QU-dw-fu4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MVR-zj-JJF" secondAttribute="trailing" constant="100" id="2dL-2m-5Am"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQA-IT-6q9" secondAttribute="trailing" id="Feg-uc-Lgn"/>
+                            <constraint firstItem="gvO-jT-04u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GPt-kt-Kie"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDK-qf-fWR" secondAttribute="trailing" constant="24" id="Hf1-uV-JFm"/>
+                            <constraint firstItem="CDK-qf-fWR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="IdW-Vg-zQZ"/>
+                            <constraint firstItem="gvO-jT-04u" firstAttribute="top" secondItem="6h0-xh-FWY" secondAttribute="bottom" constant="12" id="SL8-Da-Njm"/>
+                            <constraint firstItem="HQA-IT-6q9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="WGh-na-Ado"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WvW-6w-O7g" secondAttribute="trailing" constant="24" id="ZRY-td-mdK"/>
+                            <constraint firstItem="HQA-IT-6q9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZmF-Ug-6Ut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="HQA-IT-6q9" secondAttribute="top" constant="59" id="apr-hL-Gxi"/>
+                            <constraint firstItem="WvW-6w-O7g" firstAttribute="top" secondItem="MVR-zj-JJF" secondAttribute="bottom" constant="44" id="b6r-el-U6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="6h0-xh-FWY" secondAttribute="top" constant="32" id="ecX-Cx-Dmo"/>
+                            <constraint firstItem="WvW-6w-O7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="hz0-Xi-WmP"/>
+                            <constraint firstItem="6h0-xh-FWY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jNj-dr-d1X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gvO-jT-04u" secondAttribute="trailing" constant="100" id="nmJ-gT-Bga"/>
+                            <constraint firstItem="CDK-qf-fWR" firstAttribute="top" secondItem="WvW-6w-O7g" secondAttribute="bottom" constant="12" id="pM0-HE-yVp"/>
+                            <constraint firstItem="MVR-zj-JJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rjU-Sb-ziz"/>
+                            <constraint firstItem="MVR-zj-JJF" firstAttribute="top" secondItem="gvO-jT-04u" secondAttribute="bottom" constant="6" id="rpd-gu-6HD"/>
+                            <constraint firstItem="6h0-xh-FWY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="wt0-eO-Pqf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Group 1" width="189" height="188"/>
+        <image name="image 1" width="393" height="852"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
