@@ -23,6 +23,8 @@ class GameVC: UIViewController {
     @IBOutlet weak var variant3Button: UIButton!
     @IBOutlet weak var variant4Button: UIButton!
     
+    var player: Player!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -32,6 +34,8 @@ class GameVC: UIViewController {
         [cancelButton, variant1Button, variant2Button, variant3Button, variant4Button].forEach { view in
             view.layer.cornerRadius = 8
         }
+        playerName.text = player.name
+        
     }
     
     @IBAction func cancelTap(_ sender: UIButton) {

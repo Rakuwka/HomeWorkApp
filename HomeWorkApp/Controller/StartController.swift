@@ -41,5 +41,18 @@ class StartController: UIViewController {
         performSegue(withIdentifier: "toGameVC", sender: sender)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "toGameVC":
+            guard let destVC = segue.destination as? GameVC else { return}
+            guard var name = playerNameTF.text else { return }
+            if name.isEmpty {
+                name = "Игрок"
+            }
+            destVC.player = Player(name: name)
+        default: break
+        }
+    }
+    
 }
 
