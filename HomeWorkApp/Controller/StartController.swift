@@ -9,7 +9,6 @@ import UIKit
 
 class StartController: UIViewController {
     @IBOutlet weak var playerNameTF: UITextField!
-    
     @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
